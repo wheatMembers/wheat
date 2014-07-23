@@ -1,0 +1,100 @@
+﻿@model MvcWheat.Models.Performance
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Performance</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Title)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Title)
+            @Html.ValidationMessageFor(model => model.Title)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Time)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Time)
+            @Html.ValidationMessageFor(model => model.Time)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.City)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.City)
+            @Html.ValidationMessageFor(model => model.City)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Place)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Place)
+            @Html.ValidationMessageFor(model => model.Place)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Type)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Type)
+            @Html.ValidationMessageFor(model => model.Type)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Information)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Information)
+            @Html.ValidationMessageFor(model => model.Information)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ClickRate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ClickRate)
+            @Html.ValidationMessageFor(model => model.ClickRate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Poster)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Poster)
+            @Html.ValidationMessageFor(model => model.Poster)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AdminID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AdminID)
+            @Html.ValidationMessageFor(model => model.AdminID)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

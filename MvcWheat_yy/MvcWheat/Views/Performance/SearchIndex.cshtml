@@ -1,0 +1,165 @@
+﻿@model IEnumerable<MvcWheat.Models.Performance>
+
+@{
+    ViewBag.Title = "搜索结果";
+}
+
+<!--内容区 begin-->
+<div class="search_new">
+    <div class="search_top" id="navigation_show">
+        <p>所有商品<em class="top_c1">></em><em>“</em><span>演唱会</span><em>”</em><span class="top_c2"><!--230</span>个--></p>
+    </div>
+    <div class="search_con">
+        <div class="search_left">
+            <input type="hidden" id="cityId" value="" />
+            <input type="hidden" id="ptype" value="" />
+            <input type="hidden" id="simp_key" value="" />
+            <input type="hidden" id="curr_order" value="" />
+            <input type="hidden" id="city_name" value="" />
+            <input type="hidden" id="category_name" value="" />
+            <input type="hidden" id="tag_names" value="" />
+            <input type="hidden" id="isSingleChar" value="" />
+            <input type="hidden" id="qtime" value="25" />
+            <div class="search_city">
+                <a class="search_city_up" href="#"></a>
+                <dl class="search_city_line">
+                    <dt>城　市：</dt>
+                    <dd><a class="active" href="javascript:void(0)" onclick="cityfilter('',this)">全部</a></dd>
+                    <dd class="search_city_num">
+                        <ul class="search_city_all clear">
+                            <li><a href="javascript:void(0)" onclick="cityfilter('北京',this)">北京<!--<span>(39)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('上海',this)">上海<!--<span>(38)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('广州',this)">广州<!--<span>(19)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('深圳',this)">深圳<!--<span>(16)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('成都',this)">成都<!--<span>(12)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('南京',this)">南京<!--<span>(9)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('重庆',this)">重庆<!--<span>(9)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('杭州',this)">杭州<!--<span>(8)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('武汉',this)">武汉<!--<span>(8)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('香港',this)">香港<!--<span>(8)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('西安',this)">西安<!--<span>(7)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('郑州',this)">郑州<!--<span>(7)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('宁波',this)">宁波<!--<span>(5)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('佛山',this)">佛山<!--<span>(4)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('澳门',this)">澳门<!--<span>(4)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('厦门',this)">厦门<!--<span>(3)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('大连',this)">大连<!--<span>(3)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('太原',this)">太原<!--<span>(3)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('沈阳',this)">沈阳<!--<span>(3)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('青岛',this)">青岛<!--<span>(3)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('哈尔滨',this)">哈尔滨<!--<span>(2)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('天津',this)">天津<!--<span>(2)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('常州',this)">常州<!--<span>(2)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('无锡',this)">无锡<!--<span>(2)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('福州',this)">福州<!--<span>(2)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('东莞',this)">东莞<!--<span>(1)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('兰州',this)">兰州<!--<span>(1)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('南宁',this)">南宁<!--<span>(1)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('合肥',this)">合肥<!--<span>(1)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('昆明',this)">昆明<!--<span>(1)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('柳州',this)">柳州<!--<span>(1)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('泉州',this)">泉州<!--<span>(1)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('温州',this)">温州<!--<span>(1)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('石家庄',this)">石家庄<!--<span>(1)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('苏州',this)">苏州<!--<span>(1)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('银川',this)">银川<!--<span>(1)</span>--></a></li>
+                            <li><a href="javascript:void(0)" onclick="cityfilter('长沙',this)">长沙<!--<span>(1)</span>--></a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl id="category_filter_id">
+                    <dt>分　类：</dt>
+                    <dd><a class="active" href="javascript:void(0)" onclick="categoryfilter('',this)">全部</a></dd>
+                    <dd class="search_city_num">
+                        <ul class="clear">
+                            <li><a href="javascript:void(0)" onclick="categoryfilter('演唱会',this)">演唱会<!-- <span>(230)</span> --></a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div class="search_main">
+                <div class="search_sort">
+                    <div class="search_sort_page">
+                        <p class="search_sort_cho">
+                            <span>筛选：</span>
+                            <select id="product_sel">
+                                <option value="0">全部商品</option>
+                                <option value="1">支持超级票兑换</option>
+                                <option value="2">大麦网票务总代</option>
+                            </select>
+                        </p>
+                        <span class="search_sort_com">共<strong>@Model.Count()</strong>个商品</span>
+                        <div class="search_sort_num">
+                            <a class="none"></a>
+                            @{
+                              var page_num = 0;
+                              if(Model.Count()%10 == 0)
+                              {
+                                  page_num = Model.Count() / 10;
+                              }
+                              else
+                              {
+                                  page_num = Model.Count() / 10 + 1;
+                              }
+                            }
+                            <p class="search_sort_txt"><span>1</span>/<span>@page_num</span></p>
+                            <a class="search_sort_next" href="javascript:void(0)" onclick="pagesAjax('2')"></a>
+                        </div>
+                    </div>
+                    <ul class="search_sort_way">
+                        <li><a class="active" href="javascript:void(0)" onclick="orderajax(0,this)">按相关度</a></li>
+                        <li><a href="javascript:void(0)" onclick="orderajax(1,this)">按热门</a></li>
+                        <li><a href="javascript:void(0)" onclick="orderajax(2,this)">按演出时间</a></li>
+                    </ul>
+                </div>
+                <ul class="search_list" id="content_list">
+                    @foreach (var item in Model)
+                    { 
+                        <li>
+                            <div class="search_img">
+                                <a title=@item.Title>
+                                    <img src=@item.Poster alt="" width="115" height="155" title=@item.Title /></a>
+                            </div>
+                            <div class="search_txt">
+                                <h3><a>@item.Title</a></h3>
+                                <p>@item.Information</p>
+                                <p class="search_txt_time">
+                                    <span>时间：@item.Time.ToString("yyyy.MM.dd")</span>
+                                    <span>场馆：<a class="c2">@item.Place</a></span>
+                                    <span>状态：<!-->预订<!--></span>
+                                </p>
+                                <dl class="search_txt_piao">
+                                    <dt>票价：</dt>
+                                    <dd>
+                                        <!--80,880,1280-->
+                                    </dd>
+                                </dl>
+                                <div class="search_txt_order">
+                                    <a class="search_txt_btn" href="/redirect/p.html?keyword=演唱会&page=http://item.damai.cn/69950.html" target="_blank"><strong class="search_btn_icon2"></strong>立即预订</a>
+                                    <p class="search_txt_line clear">
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    }
+                    <li class="search_list_page">
+                        <div class="pagination">
+                            <span class="disabled" href="javascript:void(0);" name="pageA">上一页</span>
+
+                            <a class="on" href="javascript:void(0);" onclick="pagesAjax('1')" dataid="1">1</a>
+                            <a href="javascript:void(0);" onclick="pagesAjax('2')" dataid="2">2</a>
+                            <a href="javascript:void(0);" onclick="pagesAjax('3')" dataid="3">3</a>
+                            <a href="javascript:void(0);" onclick="pagesAjax('4')" dataid="4">4</a>
+                            <a href="javascript:void(0);" onclick="pagesAjax('5')" dataid="5">5</a>
+                            <a href="javascript:void(0);" onclick="pagesAjax('6')" dataid="6">6</a>
+                            <a>...</a>
+                            <a class="next" href="javascript:void(0);" onclick="pagesAjax('2')" dataid="2">下一页</a>
+                            <span class="ml10">共 页</span>到第<input type="text" id="pagenum" value="1" class="t">页 
+                            <button type="button" onclick="tosearch(23)">确定</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
