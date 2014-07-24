@@ -15,6 +15,8 @@ namespace Wheat.Controllers
     {
         //
         // GET: /Performance/
+        private WheatDbContext db = new WheatDbContext();
+        
         public ActionResult Exhibit(Performance performance)
         {
             performance = new WheatDbContext().Performances.First();
@@ -37,6 +39,11 @@ namespace Wheat.Controllers
             tickets.Sort((x, y) => x.Price.CompareTo(y.Price));
             model.Tickets = tickets;
             return View(model);
+        }
+
+        public ActionResult SearchIndex()
+        {
+            return View(db.Performances.ToList());
         }
     }
 }

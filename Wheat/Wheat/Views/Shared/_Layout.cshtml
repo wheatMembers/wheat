@@ -3,9 +3,10 @@
 <head>
     <link rel="stylesheet" href="../Content/Site.css" />
     <link rel="stylesheet" href="~/Content/Goods.css" />
+    <link rel="stylesheet" href="~/Content/style-min.css" type="text/css" />
     <script type="text/javascript" src="~/Scripts/jquery-1.7.1.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>北京音乐会_音乐会门票在线订购-大麦网北京站</title>
+    <title>@ViewBag.Title-小麦网</title>
     <meta name="keywords" content="北京音乐会,演出票,门票,在线订票,购票" />
     <meta name="description" content="大麦网北京站为您提供北京音乐会门票信息及在线订购票服务,安全可靠,放心购买,大麦网全国统一服务热线:400-610-3721" />
 </head>
@@ -264,7 +265,7 @@
             </ul>
         </div>
     </div>
-
+    <!--
     <header>
         <div class="content-wrapper">
             <div class="float-left">
@@ -285,12 +286,14 @@
             </div>
         </div>
     </header>
+        -->
     <div id="body">
         @RenderSection("featured", required: false)
         <section class="content-wrapper main-content clear-fix">
             @RenderBody()
         </section>
     </div>
+    <!--
     <footer>
         <div class="content-wrapper">
             <div class="float-left">
@@ -298,7 +301,7 @@
             </div>
         </div>
     </footer>
-
+    -->
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
 </body>

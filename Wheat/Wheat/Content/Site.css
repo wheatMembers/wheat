@@ -1,7 +1,6 @@
-﻿
-/*http://dui.damai.cn/damai_v2/common/public-min.css?2013022556*/
-/*------------------------------------------------CSS Create:2012-04-19 Author:JiangKaiCSS Last Update:2013-10-29 21:34 By GuoJinjin*Filename:public.css*Version:2.1.1*Website:www.damai.cn*Page width:1000px------------------------------------------------*/
-/* YUI 3.5.0 (build 5089) CSS RESET */
+﻿/*  http://dui.damai.cn/damai_v2/common/public-min.css */
+@charset "utf-8";
+
 html {
     color: #000;
     background: #fff;
@@ -338,22 +337,18 @@ html {
 .c4, a.c4 {
     color: #e51a45;
 }
-/*大麦红*/
 
 .c5, a.c5 {
     color: #940000;
 }
-/*深红*/
 
 .c6, a.c6 {
     color: #369;
 }
-/*深蓝*/
 
 .c7, a.c7 {
     color: #2f97b4;
 }
-/*浅蓝*/
 
 .c0, a.c0 {
     color: #fff;
@@ -430,7 +425,6 @@ textarea {
 .radio span {
     padding-left: 5px;
 }
-/*顶部*/
 
 .top li.info a:hover, .header a:hover, .header .logo .change-city:hover, .top li.mydamai ul li a:hover, .top li.guide .guide-list a:hover, .top li.message ul li a, .header .search .search-list-city, .top li.cart a span strong {
     color: #e51a45;
@@ -450,7 +444,7 @@ textarea {
 }
 
 .top li, .top li.mydamai a, .top li.message span, .top li.guide a, .top li.cart a, .top li.cart a span, .top li.tel span, .top li.help a {
-    background: url(http://dui.damai.cn/damai_v2/common/img/top.png) no-repeat;
+    background: url(img/top.png) no-repeat;
 }
 
 .top {
@@ -496,7 +490,7 @@ textarea {
                 color: #ccc;
                 display: inline-block;
                 max-width: 108px;
-                _width: expression(document.body.clientWidth > 108 ? "108px":"auto");
+                _width: expression(document.body.clientWidth>108 ? "108px":"auto");
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -669,7 +663,7 @@ textarea {
         }
 
             .top li.english div {
-                background: url(http://dui.damai.cn/damai_v2/common/img/top.png) no-repeat scroll 0 -222px;
+                background: url(img/top.png) no-repeat scroll 0 -222px;
                 width: 120px;
                 height: 22px;
             }
@@ -684,10 +678,9 @@ textarea {
                 .top li.english div a {
                     color: #e51b69;
                 }
-/*头部*/
 
 .header .logo p, .header .logo .change-city, .header .search-main, .header .search button:hover, .header .search li, .change-city-list dt {
-    background: url(http://dui.damai.cn/damai_v2/common/img/top.png) no-repeat;
+    background: url(img/top.png) no-repeat;
 }
 
 .header {
@@ -801,7 +794,7 @@ textarea {
         margin-top: 5px;
     }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and(-webkit-min-device-pixel-ratio:0) {
     .header .search input {
         line-height: 1;
     }
@@ -969,12 +962,11 @@ textarea {
 .header .quick-guide-more-off {
     width: 15px;
 }
-/*主导航*/
 
 .nav-w {
     height: 37px;
     line-height: 37px;
-    background: url(http://dui.damai.cn/damai_v2/common/img/bg-index-common.png) 0 -610px repeat-x;
+    background: url(img/bg-index-common.png) 0 -610px repeat-x;
 }
 
 .nav {
@@ -1018,7 +1010,7 @@ textarea {
 
             .nav li a:hover {
                 text-decoration: none;
-                background: url(http://dui.damai.cn/damai_v2/common/img/bg-index-common.png) 0 -647px repeat-x;
+                background: url(img/bg-index-common.png) 0 -647px repeat-x;
                 color: #fff;
             }
 
@@ -1052,7 +1044,7 @@ textarea {
                 height: 30px;
                 line-height: 30px;
                 padding: 0 19px 0 18px;
-                background: url(http://dui.damai.cn/damai_v2/common/img/bg-index-common.png) right -684px no-repeat;
+                background: url(img/bg-index-common.png) right -684px no-repeat;
             }
 
                 .nav-s ul li a:hover {
@@ -1063,12 +1055,11 @@ textarea {
                 padding: 0 18px;
                 background: none;
             }
-/*底部*/
 
 #bottom {
     clear: both;
     margin: 25px 0 0 0;
-    background: #f8f8f8 url(http://dui.damai.cn/damai_v2/common/img/bg-index-common.png) 0 -1877px repeat-x;
+    background: #f8f8f8 url(img/bg-index-common.png) 0 -1877px repeat-x;
     padding: 0;
 }
 
@@ -1085,7 +1076,7 @@ textarea {
 
 .bot_nav {
     padding-top: 115px;
-    background: url(http://dui.damai.cn/damai_v2/common/img/bottom.png) 0 0 no-repeat;
+    background: url(img/bottom.png) 0 0 no-repeat;
     overflow: hidden;
     zoom: 1;
 }
@@ -1105,7 +1096,7 @@ textarea {
         }
 
             .bot_nav li a:hover {
-                background: url(http://dui.damai.cn/damai_v2/common/img/bottom.png) 0 0 no-repeat;
+                background: url(img/bottom.png) 0 0 no-repeat;
             }
 
         .bot_nav li.s1 {
@@ -1207,7 +1198,6 @@ textarea {
     .copyright p {
         font-size: 12px;
     }
-/*分页*/
 
 .pagination {
     clear: both;
@@ -1261,14 +1251,13 @@ textarea {
         cursor: pointer;
         line-height: 20px;
         position: relative;
-        top /*\**/: 1px\9;
+        top: 1px\9;
         *top: 2px;
     }
 
         .pagination button:hover {
             background-color: #f5f5f5;
         }
-/*切换城市*/
 
 .change-city-list {
     background-color: #fff;
@@ -1306,7 +1295,6 @@ textarea {
         width: 390px;
         float: right;
     }
-    /*暂时 begin*/
 
     .change-city-list ul {
         overflow: hidden;
@@ -1335,19 +1323,17 @@ textarea {
                 color: #666;
                 padding: 0 0 0 5px;
             }
-/*暂时 end*/
 
 .header .change-city-list {
     _margin-left: 3px;
 }
-/*404*/
 
 .error404-main-new {
     height: 270px;
     width: 960px;
     margin: 0 auto;
     padding-top: 72px;
-    background: #fff url(http://dui.damai.cn/damai_v2/common/img/404.png) no-repeat scroll 205px 65px;
+    background: #fff url(img/404.png) no-repeat scroll 205px 65px;
 }
 
     .error404-main-new a {
@@ -1357,7 +1343,6 @@ textarea {
         height: 30px;
         display: block;
     }
-/*右上广告*/
 
 #popup-c-rt {
     position: absolute;
@@ -1365,7 +1350,6 @@ textarea {
     top: 36px;
     z-index: 300000;
 }
-/*右下广告*/
 
 .popup-c-rb {
     background: #fff;
@@ -1395,7 +1379,7 @@ textarea {
     .popup-c-rb-close a {
         width: 18px;
         height: 18px;
-        background: url(http://dui.damai.cn/damai_v2/common/img/ico-index-common.png) -250px -223px no-repeat;
+        background: url(img/ico-index-common.png) -250px -223px no-repeat;
     }
 
 .popup-c-rb-img img {
@@ -1407,13 +1391,12 @@ textarea {
 .loading-1 {
     width: 32px;
     height: 32px;
-    background: url(http://dui.damai.cn/damai_v2/common/img/loading-1.gif) 0 0 no-repeat;
+    background: url(img/loading-1.gif) 0 0 no-repeat;
     position: absolute;
     top: 50%;
     left: 50%;
     margin: -16px 0 0 -16px;
 }
-/*登录弹层*/
 
 .layers {
     padding: 4px;
@@ -1433,7 +1416,7 @@ textarea {
     height: 8px;
     display: block;
     position: absolute;
-    background: url(http://dui.damai.cn/damai_v2/common/img/ico-index-common.png) no-repeat scroll -227px -230px;
+    background: url(img/ico-index-common.png) no-repeat scroll -227px -230px;
     right: 15px;
     top: 14px;
     line-height: 0;
@@ -1445,7 +1428,7 @@ textarea {
     width: 4px;
     height: 4px;
     position: absolute;
-    background: url(http://dui.damai.cn/damai_v2/common/img/ico-index-common.png) no-repeat scroll -205px -230px;
+    background: url(img/ico-index-common.png) no-repeat scroll -205px -230px;
     display: block;
     line-height: 0;
     font-size: 0;
@@ -1481,7 +1464,7 @@ textarea {
 
 .layers h2 {
     height: 27px;
-    background: url(http://dui.damai.cn/damai_v2/common/img/bg-layer-h2.png) 0 0 repeat-x;
+    background: url(img/bg-layer-h2.png) 0 0 repeat-x;
     line-height: 27px;
     text-indent: 10px;
     font-weight: bold;
@@ -1490,7 +1473,6 @@ textarea {
     .layers h2 span {
         font-weight: normal;
     }
-/*面包屑*/
 
 .m-breadcrumb {
     width: 992px;
@@ -1536,13 +1518,12 @@ textarea {
 
     .m-breadcrumb .subnav-fr {
         float: right;
-        background: url(http://dui.damai.cn/damai_v2/common/img/subnav_bg.png) no-repeat scroll right 0;
+        background: url(img/subnav_bg.png) no-repeat scroll right 0;
         width: 228px;
         height: 33px;
         padding-left: 15px;
         text-align: center;
     }
-/*2013-1-15 new 返回顶部、二维码*/
 
 .gotop-code {
     width: 45px;
@@ -1557,7 +1538,7 @@ textarea {
 }
 
     .gotop-code .new-top {
-        background: url(http://dui.damai.cn/damai_v2/common/img/ico-index-common.png) no-repeat -90px -297px;
+        background: url(img/ico-index-common.png) no-repeat -90px -297px;
         width: 45px;
         height: 45px;
         display: block;
@@ -1569,7 +1550,7 @@ textarea {
         }
 
     .gotop-code .two-code {
-        background: url(http://dui.damai.cn/damai_v2/common/img/ico-index-common.png) no-repeat scroll -90px -350px;
+        background: url(img/ico-index-common.png) no-repeat scroll -90px -350px;
         height: 45px;
         height: 55px;
         display: block;
@@ -1602,12 +1583,11 @@ textarea {
             text-align: center;
             line-height: 25px;
         }
-/*2014-03-28*/
 
 .top li.help .guide-list {
     width: 75px;
     *width: 77px;
-    background: #ffffff;
+    background: #fff;
 }
 
     .top li.help .guide-list li a {
@@ -1617,1706 +1597,3 @@ textarea {
         .top li.help .guide-list li a:hover {
             color: #e51a45;
         }
-/*http://dui.damai.cn/damai_v2/city/city-min.css?20140106*/
-.nav ul.nav-common {
-    margin: 0 0 0 210px;
-    _margin: 0 0 0 105px;
-}
-
-.index-city {
-    width: 1000px;
-    margin: 0 auto;
-}
-
-.city-title {
-    background: url(http://dui.damai.cn/damai_v2/city/img/title_bg.png) repeat-x 0 bottom;
-}
-
-    .city-title h2 {
-        width: 160px;
-        height: 39px;
-        line-height: 39px;
-        font-size: 18px;
-        border-bottom: 3px solid #f88da3;
-        font-family: Microsoft YaHei;
-    }
-
-        .city-title h2.h2-1, .city-title h2.h2-2, .city-title h2.h2-3, .city-title h2.h2-4, .city-title h2.h2-5, .city-title h2.h2-6, .city-title h2.h2-7, .city-title h2.h2-8 {
-            height: 39px;
-            background: url(http://dui.damai.cn/damai_v2/city/img/bg.png) no-repeat;
-            text-indent: -1000em;
-        }
-
-        .city-title h2.h2-1 {
-            width: 187px;
-            background-position: 0 -95px;
-        }
-
-        .city-title h2.h2-2 {
-            width: 187px;
-            background-position: 0 -134px;
-        }
-
-        .city-title h2.h2-3 {
-            width: 203px;
-            background-position: 0 -173px;
-        }
-
-        .city-title h2.h2-4 {
-            width: 203px;
-            background-position: 0 -212px;
-        }
-
-        .city-title h2.h2-5 {
-            width: 203px;
-            background-position: 0 -251px;
-        }
-
-        .city-title h2.h2-6 {
-            width: 203px;
-            background-position: 0 -290px;
-        }
-
-        .city-title h2.h2-7 {
-            width: 79px;
-            background-position: 0 -329px;
-        }
-
-        .city-title h2.h2-8 {
-            width: 79px;
-            background-position: 0 -368px;
-        }
-
-.index-city-top {
-    height: 489px;
-    margin-bottom: 25px;
-}
-
-    .index-city-top .city-sort {
-        width: 198px;
-        height: 525px;
-        margin: -37px 0 0;
-        float: left;
-        border: 1px solid #ddd;
-        border-top: none;
-        position: relative;
-    }
-
-.city-sort .sort-title {
-    width: 170px;
-    height: 37px;
-    background: url(http://dui.damai.cn/damai_v2/common/img/bg-index-sort-v211.png) 0 0 repeat-x;
-    font: 14px/35px \5fae\8f6f\96c5\9ed1;
-    color: #fff;
-    padding-left: 30px;
-    position: absolute;
-    top: 0;
-    left: -1px;
-}
-
-    .city-sort .sort-title a {
-        color: #fff;
-    }
-
-        .city-sort .sort-title a:hover {
-            text-decoration: underline;
-        }
-
-.city-sort .sort-var {
-    width: 190px;
-    height: 180px;
-    margin: 37px 0 0 8px;
-    *padding-top: 37px;
-    _margin-top: 0;
-    overflow: hidden;
-}
-
-    .city-sort .sort-var li {
-        display: inline;
-        float: left;
-        margin: 9px 7px 0 0;
-        width: 86px;
-        height: 32px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        border: 1px solid #e3e3e3;
-    }
-
-        .city-sort .sort-var li a {
-            display: block;
-            width: 84px;
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-            color: #333;
-            margin: 1px;
-            overflow: hidden;
-        }
-
-            .city-sort .sort-var li a:hover, .city-sort .sort-var li.on a {
-                background-color: #e51a45;
-                color: #fff;
-            }
-
-    .city-sort .sort-var .unable a:hover, .city-sort .sort-var .unable a {
-        background: #efefef;
-        color: #b3b3b3;
-        cursor: default;
-    }
-
-.city-sort .city-key {
-    margin: 5px auto 15px;
-    width: 178px;
-    height: 133px;
-    overflow: hidden;
-}
-
-    .city-sort .city-key dt {
-        height: 30px;
-        line-height: 30px;
-        background: url(http://dui.damai.cn/damai_v2/city/img/title_bg.png) repeat-x 0 bottom;
-        color: #e51a45;
-        font-family: Microsoft YaHei;
-        margin-bottom: 3px;
-        font-size: 14px;
-    }
-
-    .city-sort .city-key dd {
-        width: 59px;
-        float: left;
-    }
-
-        .city-sort .city-key dd a {
-            line-height: 25px;
-            color: #7e7e7e;
-            padding: 0 4px;
-        }
-
-            .city-sort .city-key dd a:hover {
-                color: #e51a45;
-            }
-
-.city-sort .city-stadium {
-    height: 133px;
-    margin: 0 auto;
-}
-
-    .city-sort .city-stadium dd {
-        width: 89px;
-    }
-
-        .city-sort .city-stadium dd a {
-            margin-right: 20px;
-        }
-
-.index-city-top .city-hot {
-    margin-left: 10px;
-    float: left;
-}
-
-.index-city-top .city-slide {
-    width: 790px;
-    height: 260px;
-    margin: 10px 0 15px;
-    overflow: hidden;
-    position: relative;
-    background-color: #000;
-    z-index: 10;
-}
-
-.city-slide ul {
-    height: 260px;
-}
-
-    .city-slide ul li {
-        width: 790px;
-        height: 260px;
-        float: left;
-    }
-
-.city-slide .bg {
-    width: 790px;
-    height: 28px;
-    position: absolute;
-    background-color: #000;
-    bottom: 0;
-    left: 0;
-    border-top: 1px solid #fff;
-    filter: alpha(opacity=30);
-    opacity: .3;
-    z-index: 5;
-}
-
-.city-slide .num {
-    overflow: hidden;
-    zoom: 1;
-    position: absolute;
-    right: 18px;
-    bottom: 8px;
-    z-index: 10;
-}
-
-    .city-slide .num span {
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        background: url(http://dui.damai.cn/damai_v2/common/img/bg-slide.png) 0 -12px no-repeat;
-        _background: url(http://dui.damai.cn/damai_v2/common/img/ie6/bg-slide.png) 0 -12px no-repeat;
-        cursor: pointer;
-        overflow: hidden;
-    }
-
-        .city-slide .num span.on {
-            background-position: 0 0;
-        }
-
-.city-slide .skip {
-    display: none;
-    _display: block;
-    width: 23px;
-    height: 47px;
-    background: url(http://dui.damai.cn/damai_v2/common/img/bg-slide.png) no-repeat;
-    _background: url(http://dui.damai.cn/damai_v2/common/img/ie6/bg-slide.png) no-repeat;
-    position: absolute;
-    top: 50%;
-    margin-top: -24px;
-    text-indent: -1000em;
-    cursor: pointer;
-}
-
-.city-slide .prev {
-    background-position: 0 -172px;
-    left: 10px;
-}
-
-    .city-slide .prev:hover {
-        background-position: 0 -219px;
-    }
-
-.city-slide .next {
-    background-position: -23px -172px;
-    right: 10px;
-}
-
-    .city-slide .next:hover {
-        background-position: -23px -219px;
-    }
-
-.city-slide:hover .prev, .city-slide:hover .next {
-    display: block;
-}
-
-.index-city-top .city-rec {
-    width: 772px;
-    height: 202px;
-    border: 1px solid #ddd;
-    padding-left: 15px;
-}
-
-.city-rec .city-title a {
-    font-family: SimSun;
-    font-size: 12px;
-    color: #369;
-    padding-top: 18px;
-    float: right;
-}
-
-.city-rec .title-rec {
-    margin-right: 16px;
-}
-
-    .city-rec .title-rec h2 {
-        width: 140px;
-    }
-
-.city-rec .rec-con li {
-    float: left;
-    padding: 12px 14px 0 0;
-}
-
-.city-rec .rec-con .rec-con-img {
-    display: block;
-    width: 140px;
-    height: 105px;
-}
-
-.city-rec .rec-con p {
-    width: 140px;
-    text-align: center;
-    margin-top: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.index-city-con .city-infor {
-    width: 758px;
-    border: 1px solid #ddd;
-    float: left;
-    padding: 0 15px;
-}
-
-.city-infor .infor-title {
-    float: right;
-}
-
-    .city-infor .infor-title li {
-        float: left;
-    }
-
-    .city-infor .infor-title a {
-        display: block;
-        float: left;
-        padding: 0 20px;
-        height: 39px;
-        font: 14px/39px \5fae\8f6f\96c5\9ed1;
-        color: #808080;
-        text-align: center;
-        border-right: 1px solid #ddd;
-    }
-
-        .city-infor .infor-title .active a, .city-infor .infor-title a:hover {
-            color: #fff;
-            background: #e51a45;
-        }
-
-.city-infor .infor-details {
-    padding-top: 20px;
-}
-
-    .city-infor .infor-details li {
-        width: 340px;
-        line-height: 28px;
-        float: left;
-        padding: 0 30px 40px 0;
-    }
-
-.infor-details .infor-img {
-    display: block;
-    width: 135px;
-    height: 180px;
-    padding: 1px;
-    border: 1px solid #ddd;
-    float: left;
-    margin-right: 15px;
-}
-
-    .infor-details .infor-img:hover {
-        border-color: #e51a45;
-    }
-
-.infor-details li div {
-    float: left;
-}
-
-.infor-details h4, .infor-details p {
-    width: 186px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.infor-details h4 {
-    font-weight: bold;
-    color: #333;
-    font-size: 14px;
-}
-
-.infor-details p {
-    color: #999;
-}
-
-    .infor-details p span {
-        color: #e51a45;
-        font-size: 16px;
-        font-weight: bold;
-        padding-right: 6px;
-        vertical-align: -2px;
-    }
-
-.infor-details .infor-online, .infor-details .infor-elec {
-    display: inline-block;
-    color: #999;
-    padding-left: 18px;
-    margin: 10px 18px 0 0;
-    background: url(http://dui.damai.cn/damai_v2/common/img/ico-list-1.png) no-repeat 0 -458px;
-}
-
-.infor-details .infor-elec {
-    background-position: 0 -574px;
-}
-
-.infor-more {
-    height: 49px;
-    background: #f3f3f3;
-    margin: 0 -15px;
-    position: relative;
-}
-
-    .infor-more a {
-        display: block;
-        width: 260px;
-        height: 30px;
-        background: url(http://dui.damai.cn/damai_v2/city/img/bg.png) no-repeat 0 0;
-        text-indent: -9999px;
-        position: absolute;
-        top: 10px;
-        left: 250px;
-    }
-
-        .infor-more a:hover {
-            background-position: 0 -30px;
-        }
-
-.index-city-con .city-right {
-    float: left;
-    margin-left: 10px;
-}
-
-.city-right .city-tab {
-    width: 198px;
-    border-top: 1px solid #ddd;
-    border-left: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    margin: 0 0 25px 0;
-}
-
-.city-tab .city-tab-title li {
-    float: left;
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    background: url(http://dui.damai.cn/damai_v2/city/img/right_title.jpg) repeat;
-}
-
-.city-tab .city-tab-title a {
-    display: block;
-    width: 98px;
-    height: 38px;
-    line-height: 38px;
-    text-align: center;
-    color: #808080;
-    font-family: Microsoft YaHei;
-    font-size: 14px;
-}
-
-.city-tab .city-tab-title .active {
-    border-bottom: none;
-    background: none;
-}
-
-    .city-tab .city-tab-title .active a {
-        color: #000;
-        font-size: 16px;
-    }
-
-.city-tab .city-tab-con {
-    padding: 8px 0 13px 10px;
-    border-right: 1px solid #ddd;
-}
-
-    .city-tab .city-tab-con li {
-        width: 178px;
-        height: 27px;
-        line-height: 27px;
-        border-bottom: 1px solid #efefef;
-        *float: left;
-    }
-
-        .city-tab .city-tab-con li span {
-            display: block;
-            width: 11px;
-            height: 11px;
-            float: left;
-            margin: 9px 8px 0 0;
-            line-height: 11px;
-            text-align: center;
-            -webkit-border-radius: 2px;
-            -moz-border-radius: 2px;
-            border-radius: 2px;
-            color: #fff;
-            font-weight: bold;
-            font-size: 10px;
-            background: #b7b7b7;
-        }
-
-    .city-tab .city-tab-con .active span {
-        background: #e51a45;
-    }
-
-    .city-tab .city-tab-con li a {
-        display: block;
-        width: 156px;
-        float: left;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-.city-right .city-box {
-    position: relative;
-    width: 198px;
-    border: 1px solid #ddd;
-    margin: 0 0 25px 0;
-}
-
-.city-right .city-box2 {
-    height: 278px;
-}
-
-.city-right .city-box4 {
-    margin-bottom: 0;
-}
-
-.city-right .city-box7 {
-    margin: 25px 0 0 0;
-}
-
-.city-box-title {
-    width: 186px;
-    height: 38px;
-    font-size: 14px;
-    line-height: 38px;
-    border-bottom: 1px solid #ddd;
-    background: url(http://dui.damai.cn/damai_v2/city/img/right_title.jpg) repeat;
-    padding-left: 12px;
-    *margin-bottom: 10px;
-}
-
-.city-box-change {
-    height: 19px;
-    width: 43px;
-    float: right;
-    position: absolute;
-    top: 10px;
-    right: 5px;
-}
-
-    .city-box-change li.prev {
-        float: left;
-    }
-
-    .city-box-change li.next {
-        float: right;
-    }
-
-    .city-box-change li a {
-        display: block;
-        width: 19px;
-        height: 19px;
-        text-indent: -1000em;
-        background: url(http://dui.damai.cn/damai_v2/common/img/bg-slide.png) no-repeat;
-        overflow: hidden;
-    }
-
-    .city-box-change li.prev a {
-        background-position: 0 -84px;
-    }
-
-        .city-box-change li.prev a:hover {
-            background-position: 0 -103px;
-        }
-
-    .city-box-change li.next a {
-        background-position: -19px -84px;
-    }
-
-        .city-box-change li.next a:hover {
-            background-position: -19px -103px;
-        }
-
-.city-box-img {
-    display: block;
-    width: 190px;
-    height: 100px;
-    margin: 10px auto;
-    position: relative;
-}
-
-    .city-box-img .hot {
-        display: block;
-        position: absolute;
-        display: block;
-        width: 35px;
-        height: 35px;
-        background: url(http://dui.damai.cn/damai_v2/city/img/bg.png) -174px -60px no-repeat;
-        top: 0;
-        left: 0;
-    }
-
-.city-box2 .city-box-img {
-    height: 117px;
-}
-
-.city-box-con {
-    padding: 0 8px;
-}
-
-    .city-box-con h4 {
-        width: 180px;
-        height: 40px;
-        font-size: 14px;
-        line-height: 20px;
-        overflow: hidden;
-    }
-
-    .city-box-con p {
-        line-height: 26px;
-        color: #7e7e7e;
-    }
-
-    .city-box-con .city-box-price {
-        font-size: 14px;
-    }
-
-        .city-box-con .city-box-price span {
-            color: #e51a45;
-        }
-
-.city-box3-con {
-    width: 185px;
-    border-top: 1px dashed #ddd;
-    margin: 0 auto;
-    padding: 10px 0;
-}
-
-    .city-box3-con li {
-        height: 24px;
-        line-height: 24px;
-        padding-left: 15px;
-        background: url(http://dui.damai.cn/damai_v2/common/img/bg-index-common.png) 4px -30px no-repeat;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        width: 170px;
-        *float: left;
-    }
-
-.city-box4-con {
-    padding-bottom: 19px;
-    *padding-bottom: 10px;
-}
-
-    .city-box4-con .city-box-img {
-        margin: 10px auto 0;
-    }
-
-    .city-box4-con h4 {
-        width: 190px;
-        height: 26px;
-        line-height: 26px;
-        overflow: hidden;
-        margin: 0 auto 3px;
-    }
-
-    .city-box4-con .active {
-        border-bottom: 1px solid #dfdfdf;
-        background: url(http://dui.damai.cn/damai_v2/city/img/title_bg.png);
-        font-weight: bold;
-    }
-
-    .city-box4-con h4 span {
-        display: block;
-        width: 11px;
-        height: 11px;
-        float: left;
-        margin: 8px 7px 0 7px;
-        _margin: 8px 3px 0 3px;
-        overflow: hidden;
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        border-radius: 2px;
-        background: #999;
-    }
-
-    .city-box4-con h4.active span {
-        background: #e51a45;
-    }
-
-    .city-box4-con h4 span i {
-        display: block;
-        border-color: transparent transparent transparent #fff;
-        border-style: dashed dashed dashed solid;
-        border-width: 3px;
-        height: 0;
-        margin: 2px 0 0 4px;
-        overflow: hidden;
-    }
-
-    .city-box4-con p {
-        width: 176px;
-        line-height: 24px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin: 0 auto;
-    }
-
-        .city-box4-con p a {
-            color: #666;
-        }
-
-            .city-box4-con p .city-box4-now, .city-box4-con p a:hover {
-                color: #e51a45;
-            }
-
-                .city-box4-con p .city-box4-now:hover {
-                    text-decoration: underline;
-                }
-
-.city-box5-con {
-    width: 190px;
-    margin: 0 auto;
-}
-
-.city-box7-con {
-    border-right: 1px solid #ddd;
-    padding: 0 5px;
-    margin-bottom: -1px;
-}
-
-    .city-box7-con li {
-        padding: 10px 0;
-        border-bottom: 1px dashed #ddd;
-    }
-
-        .city-box7-con li .img {
-            display: block;
-            width: 135px;
-            height: 180px;
-            padding: 4px;
-            border: 1px solid #ccc;
-            margin: 0 auto;
-        }
-
-            .city-box7-con li .img:hover {
-                border-color: #e51a45;
-            }
-
-        .city-box7-con li .title {
-            display: block;
-            text-align: center;
-            height: 30px;
-            line-height: 30px;
-            font-weight: bold;
-        }
-
-        .city-box7-con li span {
-            display: block;
-            text-align: center;
-            color: #999;
-        }
-
-.city-lately {
-    height: 374px;
-    margin: 25px 0;
-}
-
-.title-lately {
-    margin-bottom: 2px;
-}
-
-.lately-txt {
-    width: 232px;
-    height: 330px;
-    background: #f3f3f3;
-    position: relative;
-}
-
-    .lately-txt ul {
-        padding: 25px 0 25px 11px;
-    }
-
-    .lately-txt li {
-        width: 100px;
-        float: left;
-        line-height: 38px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        padding-right: 10px;
-    }
-
-        .lately-txt li a {
-            font-size: 16px;
-            color: #333;
-            font-weight: bold;
-            font-family: Microsoft YaHei;
-        }
-
-            .lately-txt li.active a, .lately-txt li a:hover {
-                color: #e51a45;
-            }
-
-    .lately-txt .lately-more {
-        display: block;
-        width: 232px;
-        background: #e6234e;
-        height: 30px;
-        line-height: 30px;
-        text-align: center;
-        font-family: Microsoft YaHei;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        color: #fff;
-    }
-
-        .lately-txt .lately-more:hover {
-            color: #fff;
-            text-decoration: underline;
-        }
-
-.city-date {
-    height: 808px;
-    overflow: hidden;
-}
-
-    .city-date .date-title {
-        height: 89px;
-        background: url(http://dui.damai.cn/damai_v2/city/img/date_bg.jpg) no-repeat;
-        position: relative;
-    }
-
-    .city-date .date-choice {
-        width: 190px;
-        height: 33px;
-        position: absolute;
-        top: 50px;
-        left: 400px;
-    }
-
-    .city-date .date-con {
-        overflow: hidden;
-    }
-
-.date-choice .prev, .date-choice .next {
-    width: 29px;
-    background: url(http://dui.damai.cn/damai_v2/city/img/icon.png) no-repeat 0 -60px;
-    cursor: pointer;
-    height: 33px;
-    text-indent: -9999px;
-}
-
-.date-choice .next {
-    background-position: 0 -100px;
-}
-
-.date-choice p {
-    float: left;
-}
-
-.date-choice .date-num {
-    width: 132px;
-    line-height: 33px;
-    text-align: center;
-    color: #2f2f2f;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-    .date-choice .date-num span {
-        color: #e51a45;
-    }
-
-.city-date table {
-    width: 100%;
-    background: url(http://dui.damai.cn/damai_v2/city/img/table_bg.jpg) no-repeat;
-    border: 1px solid #ddd;
-    border-top: none;
-}
-
-.city-date th {
-    width: 142px;
-    height: 33px;
-}
-
-.city-date .active1, .city-date .active2, .city-date .active3, .city-date .active4, .city-date .active5, .city-date .active6, .city-date .active7 {
-    background: url(http://dui.damai.cn/damai_v2/city/img/table_bg.jpg) -998px 0 no-repeat;
-}
-
-.city-date .active2 {
-    background-position: -1141px 0;
-}
-
-.city-date .active3 {
-    background-position: -1284px 0;
-}
-
-.city-date .active4 {
-    background-position: -1427px 0;
-}
-
-.city-date .active5 {
-    background-position: -1571px 0;
-}
-
-.city-date .active6 {
-    background-position: -1712px 0;
-}
-
-.city-date .active7 {
-    background-position: -1854px 0;
-}
-
-.city-date td {
-    height: 136px;
-    border: 1px solid #ddd;
-}
-
-    .city-date td a, .city-date .date-con, .city-date .date-con-null {
-        display: block;
-        height: 122px;
-        padding: 5px;
-        border: 2px solid #fff;
-        position: relative;
-    }
-
-        .city-date td a:hover, .city-date .date-con:hover, .city-date .date-con-null:hover {
-            border: 2px solid #f2f2f2;
-            background: #f2f2f2;
-        }
-
-    .city-date td .date-con-none {
-        height: 136px;
-        border-color: #f5f5f5;
-        background: #f5f5f5;
-        position: relative;
-    }
-
-.city-date .date-con-now a, .city-date .date-con-now .date-con, .city-date .date-con-now .date-con-null {
-    border: 2px solid #e51a45;
-    background: #f2f2f2;
-}
-
-.city-date td a span, .city-date td .date-con .date, .city-date td .date-con-none .date, .city-date td .date-con-null .date {
-    display: block;
-    width: 29px;
-    height: 25px;
-    overflow: hidden;
-    background: url(http://dui.damai.cn/damai_v2/city/img/icon.png) no-repeat 0 -140px;
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    padding: 5px 0 0 1px;
-    color: #333;
-}
-
-.city-date td .date-con-none .date {
-    top: 0;
-    left: 0;
-    color: #ccc;
-}
-
-.city-date td a .date-week, .city-date td .date-con .date-week, .city-date td .date-con-null .date-week {
-    color: #e51a45;
-}
-
-.city-date .date-con-now a span, .city-date .date-con-now .date-con .date, .city-date .date-con-now .date-con-null .date {
-    background-position: 0 -180px;
-    color: #fff;
-}
-
-.city-date .date-con ul {
-    margin-top: 15px;
-}
-
-.city-date .date-con li {
-    width: 100px;
-    background: url(http://dui.damai.cn/damai/images/date.png) no-repeat scroll -37px -70px transparent;
-    line-height: 20px;
-    overflow: hidden;
-    padding-left: 20px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-    .city-date .date-con li a {
-        display: inline;
-        padding: 0;
-        border: none;
-        color: #999;
-    }
-
-        .city-rec .city-title a:hover, .infor-details p a:hover, .city-date .date-con li a:hover {
-            color: #e51a45;
-        }
-
-.index-city-s .index-city-top {
-    height: 270px;
-}
-
-    .index-city-s .index-city-top .city-sort {
-        height: 306px;
-    }
-
-.index-city-s .city-sort .city-key {
-    margin: 5px auto 0 auto;
-    height: 84px;
-}
-
-.index-city-s .index-city-top .city-slide {
-    margin: 10px 0 0 0;
-}
-
-.index-city-s .index-city-con .city-infor {
-    height: auto;
-}
-
-.show-list-1 li {
-    overflow: hidden;
-    zoom: 1;
-    padding: 20px 0;
-    position: relative;
-    border-bottom: 1px dashed #ddd;
-}
-
-    .show-list-1 li .img {
-        display: block;
-        padding: 1px;
-        width: 135px;
-        height: 180px;
-        border: 1px solid #ccc;
-        float: left;
-    }
-
-        .show-list-1 li .img:hover {
-            border-color: #e51a45;
-        }
-
-    .show-list-1 li dl {
-        margin: 0 0 0 154px;
-    }
-
-    .show-list-1 li dt {
-        font-size: 14px;
-        font-weight: bold;
-        padding-bottom: 5px;
-    }
-
-    .show-list-1 li dd {
-        color: #999;
-        padding: 5px 0;
-        overflow: hidden;
-        zoom: 1;
-    }
-
-        .show-list-1 li dd strong {
-            font-weight: normal;
-        }
-
-        .show-list-1 li dd p {
-            display: inline;
-        }
-
-        .show-list-1 li dd.date {
-            width: 200px;
-            float: left;
-        }
-
-        .show-list-1 li dd.venue a {
-            color: #369;
-        }
-
-            .show-list-1 li dd.venue a:hover {
-                color: #e51a45;
-            }
-
-        .show-list-1 li dd.price span {
-            color: #e51a45;
-        }
-
-        .show-list-1 li dd.icon a, .show-list-2 .show-list-detail span a {
-            color: #999;
-            display: inline-block;
-            height: 16px;
-            line-height: 16px;
-            background: url(http://dui.damai.cn/damai_v2/common/img/ico-list-1.png) no-repeat;
-            padding-left: 20px;
-            margin-right: 20px;
-        }
-
-            .show-list-1 li dd.icon a:hover, .show-list-2 .show-list-detail span a:hover {
-                color: #e51a45;
-            }
-
-            .show-list-1 li dd.icon a.icon-online, .show-list-2 .show-list-detail span a.icon-online {
-                background-position: 0 -464px;
-            }
-
-            .show-list-1 li dd.icon a.icon-elec, .show-list-2 .show-list-detail span a.icon-elec {
-                background-position: 0 -580px;
-            }
-
-    .show-list-1 li .btn {
-        position: absolute;
-        overflow: hidden;
-        zoom: 1;
-        right: 0;
-        bottom: 20px;
-    }
-
-        .show-list-1 li .btn a {
-            display: block;
-            width: 87px;
-            height: 27px;
-            float: left;
-            background: url(http://dui.damai.cn/damai_v2/common/img/bg-btn-1.png) no-repeat;
-            text-indent: -1000em;
-            margin-left: 10px;
-        }
-
-            .show-list-1 li .btn a.btn-buy {
-                background-position: 0 0;
-            }
-
-                .show-list-1 li .btn a.btn-buy:hover {
-                    background-position: 0 -29px;
-                }
-
-                .show-list-1 li .btn a.btn-buy:active {
-                    background-position: 0 -58px;
-                }
-
-            .show-list-1 li .btn a.btn-fav {
-                background-position: -89px 0;
-            }
-
-                .show-list-1 li .btn a.btn-fav:hover {
-                    background-position: -89px -29px;
-                }
-
-                .show-list-1 li .btn a.btn-fav:active {
-                    background-position: -89px -58px;
-                }
-
-.show-list-2 {
-    padding: 0 20px;
-}
-
-    .show-list-2 h3 {
-        font-size: 14px;
-        padding-left: 15px;
-        background: url(http://dui.damai.cn/damai_v2/city/img/bg_top.png) no-repeat 0 -212px;
-        margin-bottom: 10px;
-    }
-
-    .show-list-2 .show-list-detail span, .show-list-2 .show-list-detail span a {
-        display: inline-block;
-        height: 24px;
-        line-height: 24px;
-        color: #909090;
-        padding-right: 10px;
-    }
-
-        .show-list-2 .show-list-detail span a.icon-online {
-            background-position: 0 -459px;
-        }
-
-        .show-list-2 .show-list-detail span a.icon-elec {
-            background-position: 0 -575px;
-        }
-
-.show-list-sort {
-    overflow: hidden;
-    zoom: 1;
-}
-
-    .show-list-sort .display {
-        float: left;
-        padding: 10px 0 0 0;
-    }
-
-        .show-list-sort .display span, .show-list-sort .order span {
-            display: block;
-            float: left;
-            height: 20px;
-            line-height: 20px;
-            color: #333;
-        }
-
-        .show-list-sort .display ul, .show-list-sort .order ul {
-            height: 20px;
-            float: left;
-        }
-
-        .show-list-sort .display li, .show-list-sort .order li {
-            float: left;
-        }
-
-        .show-list-sort .display li {
-            margin-right: 10px;
-        }
-
-            .show-list-sort .display li a {
-                display: block;
-                float: left;
-                height: 20px;
-                line-height: 20px;
-                color: #999;
-                padding-left: 20px;
-                background: url(http://dui.damai.cn/damai_v2/common/img/ico-list-1.png) no-repeat;
-            }
-
-                .show-list-sort .display li a.display-img-on, .show-list-sort .display li a.display-img-off:hover {
-                    background-position: 0 2px;
-                    color: #e51a45;
-                }
-
-                .show-list-sort .display li a.display-img-off {
-                    background-position: 0 -114px;
-                }
-
-                .show-list-sort .display li a.display-txt-on, .show-list-sort .display li a.display-txt-off:hover {
-                    background-position: 0 -230px;
-                    color: #e51a45;
-                }
-
-                .show-list-sort .display li a.display-txt-off {
-                    background-position: 0 -346px;
-                }
-
-    .show-list-sort .order {
-        float: right;
-        padding: 10px 0 0 0;
-    }
-
-        .show-list-sort .order li {
-            height: 20px;
-            position: relative;
-        }
-
-            .show-list-sort .order li a {
-                display: block;
-                float: left;
-                height: 20px;
-                line-height: 20px;
-                color: #999;
-                padding: 0 7px;
-            }
-
-                .show-list-sort .order li a:hover {
-                    color: #e51a45;
-                }
-
-            .show-list-sort .order li.on {
-                border: 1px solid #efefef;
-                height: 16px;
-                padding: 1px;
-            }
-
-                .show-list-sort .order li.on a {
-                    height: 16px;
-                    line-height: 16px;
-                    color: #e51a45;
-                    background-color: #efefef;
-                    padding: 0 5px;
-                }
-
-            .show-list-sort .order li .hot {
-                display: block;
-                width: 14px;
-                height: 9px;
-                background: url(http://dui.damai.cn/damai_v2/city/img/bg.png) 0 -86px no-repeat;
-                position: absolute;
-                right: -6px;
-                top: -5px;
-            }
-
-.city-right-search {
-    border: 1px solid #ddd;
-    width: 198px;
-    margin-bottom: 25px;
-}
-
-    .city-right-search h3 {
-        width: 126px;
-        height: 26px;
-        background: url(http://dui.damai.cn/damai_v2/city/img/bg.png) 0 -60px no-repeat;
-        margin: 10px auto;
-        text-indent: -1000em;
-    }
-
-    .city-right-search dl {
-        padding: 0 20px;
-    }
-
-    .city-right-search dt {
-        width: 36px;
-        float: left;
-        height: 22px;
-        line-height: 22px;
-        margin-bottom: 10px;
-    }
-
-    .city-right-search dd {
-        width: 122px;
-        float: left;
-        height: 22px;
-        margin-bottom: 10px;
-    }
-
-        .city-right-search dd select {
-            border: 1px solid #ccc;
-            width: 122px;
-            height: 22px;
-            line-height: 22px;
-        }
-
-    .city-right-search button {
-        display: block;
-        width: 65px;
-        height: 22px;
-        background: url(http://dui.damai.cn/damai_v2/common/img/bg-btn-1.png) 0 -87px no-repeat;
-        border: none;
-        text-indent: -1000em;
-        cursor: pointer;
-        margin: 0 0 20px 56px;
-    }
-
-        .city-right-search button:hover {
-            background-position: 0 -111px;
-        }
-
-.city-box6-con {
-    padding: 1px;
-    *margin-top: -10px;
-}
-
-    .city-box6-con ol {
-        overflow: hidden;
-        zoom: 1;
-    }
-
-    .city-box6-con li {
-        overflow: hidden;
-        zoom: 1;
-        margin: 0 4px;
-        border-top: 1px dashed #ddd;
-        padding: 8px 0;
-        _margin-bottom: -10px;
-    }
-
-        .city-box6-con li.top-1 {
-            border-color: #fff;
-        }
-
-        .city-box6-con li .img span {
-            display: block;
-            position: absolute;
-            display: block;
-            width: 35px;
-            height: 35px;
-            background: url(http://dui.damai.cn/damai_v2/city/img/bg_top.png) no-repeat;
-            top: 0;
-            left: 0;
-        }
-
-    .city-box6-con .top-2 .img span {
-        background-position: 0 -40px;
-    }
-
-    .city-box6-con .top-3 .img span {
-        background-position: 0 -80px;
-    }
-
-    .city-box6-con .top-4 .img span {
-        background-position: 0 -120px;
-    }
-
-    .city-box6-con .top-5 .img span {
-        background-position: 0 -160px;
-    }
-
-    .city-box6-con li div {
-        display: none;
-    }
-
-    .city-box6-con li.on p {
-        display: none;
-    }
-
-    .city-box6-con li.on div {
-        display: block;
-    }
-
-    .city-box6-con li.on {
-        background: #fdf0f3 url(http://dui.damai.cn/damai_v2/city/img/right_rank_bg.png) 0 0 repeat-x;
-        padding: 9px 3px;
-        margin: 0 0 1px 0;
-        border-top: none;
-    }
-
-    .city-box6-con .on .img {
-        display: block;
-        width: 70px;
-        height: 100px;
-        float: left;
-        position: relative;
-    }
-
-        .city-box6-con .on .img img {
-            width: 70px;
-            height: 100px;
-        }
-
-    .city-box6-con .on dl {
-        margin: 0 0 0 80px;
-    }
-
-    .city-box6-con .on dt {
-        margin-bottom: 5px;
-    }
-
-        .city-box6-con .on dt a {
-            color: #e51a45;
-        }
-
-            .city-box6-con .on dt a:hover {
-                text-decoration: underline;
-            }
-
-    .city-box6-con .on dd {
-        color: #999;
-    }
-
-        .city-box6-con .on dd strong {
-            font-weight: normal;
-            color: #e51a45;
-        }
-
-        .city-box6-con .on dd span {
-            color: #333;
-        }
-
-    .city-box6-con li .num {
-        display: block;
-        width: 13px;
-        height: 15px;
-        float: left;
-        color: #fff;
-        font-size: 11px;
-        background: url(http://dui.damai.cn/damai_v2/city/img/bg.png) -126px -60px no-repeat;
-        text-align: center;
-        line-height: 13px;
-        margin: 2px 0 0 0;
-    }
-
-    .city-box6-con li .title {
-        display: block;
-        width: 168px;
-        float: left;
-        padding-left: 5px;
-        color: #666;
-    }
-
-        .city-box6-con li .title:hover {
-            color: #e51a45;
-        }
-
-.city-right-search .right-search-date {
-    width: 155px;
-    height: 27px;
-    margin-bottom: 10px;
-    line-height: 27px;
-    padding-left: 3px;
-    background: #eb3058;
-}
-
-    .city-right-search .right-search-date input {
-        width: 65px;
-        margin: 2px 0 0 0;
-        padding: 2px 1px;
-        border: 1px solid #bb042c;
-    }
-
-.layer_mailreg {
-    overflow: hidden;
-    width: 300px;
-    z-index: 10000;
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    margin-left: -154px;
-    display: none;
-}
-
-.layers {
-    padding: 4px;
-    clear: both;
-    background: #d4d3d3;
-    z-index: 10000;
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    margin-left: -154px;
-    overflow: hidden;
-    display: none;
-}
-
-.layer-1 {
-    width: 300px;
-}
-
-#play {
-    width: 300px;
-    overflow: hidden;
-}
-
-.layers b {
-    width: 4px;
-    height: 4px;
-    position: absolute;
-    background: url(http://dui.damai.cn/damai_v2/city/img/bg_layers.png) no-repeat;
-    display: block;
-    line-height: 0;
-    font-size: 0;
-}
-
-    .layers b.La {
-        left: 0;
-        top: 0;
-        background-position: left top;
-    }
-
-    .layers b.Lb {
-        right: 0;
-        top: 0;
-        background-position: right top;
-    }
-
-    .layers b.Lc {
-        left: 0;
-        bottom: 0;
-        background-position: left bottom;
-    }
-
-    .layers b.Ld {
-        right: 0;
-        bottom: 0;
-        background-position: right bottom;
-    }
-
-.layers a.close {
-    width: 9px;
-    height: 8px;
-    display: block;
-    position: absolute;
-    background: url(http://dui.damai.cn/damai_v2/city/img/icon_close1.png) no-repeat;
-    right: 15px;
-    top: 14px;
-    line-height: 0;
-    font-size: 0;
-    z-index: 999;
-}
-
-.layers .inner {
-    background: #fff;
-}
-
-.layers h2 {
-    height: 27px;
-    background: url(http://dui.damai.cn/damai_v2/city/img/bg_layer_h2.png) repeat-x;
-    line-height: 27px;
-    text-indent: 10px;
-    font-weight: bold;
-}
-
-.layers .pds {
-    padding: 44px 0 80px 0;
-}
-
-.layers .inner {
-    background: #fff;
-}
-
-.textcenter {
-    text-align: center;
-}
-
-.city-lately {
-    position: relative;
-}
-
-    .city-lately .fl {
-        position: absolute;
-    }
-
-.lately-txt {
-    position: absolute;
-    left: 768px;
-}
-
-.flip {
-    position: absolute;
-    left: 719px;
-    top: 40px;
-    width: 56px;
-    height: 56px;
-    background: url(http://dui.damai.cn/damai_v2/city/img/images/flip_bg.png) no-repeat;
-}
-
-    .flip .btns {
-        position: absolute;
-        left: 8px;
-        top: 5px;
-        width: 40px;
-        height: 40px;
-        z-index: 1;
-        background: url(http://dui.damai.cn/damai_v2/city/img/flip_btns.png) no-repeat 0 0;
-        cursor: pointer;
-    }
-
-    .flip .next-hover {
-        background: url(http://dui.damai.cn/damai_v2/city/img/flip_btns.png) no-repeat 0 -41px;
-    }
-
-    .flip .prev-hover {
-        background: url(http://dui.damai.cn/damai_v2/city/img/flip_btns.png) no-repeat 0 -81px;
-    }
-
-.city-date {
-    position: relative;
-}
-
-.pop-date {
-    border: 1px solid #DDD;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    background: #F2F2F2;
-}
-
-    .pop-date .date {
-        background: url(http://dui.damai.cn/damai_v2/city/img/icon.png) no-repeat 0 -140px;
-        color: #333;
-        display: block;
-        height: 25px;
-        left: -2px;
-        overflow: hidden;
-        padding: 5px 0 0 1px;
-        position: absolute;
-        top: -2px;
-        width: 29px;
-    }
-
-    .pop-date .date-con {
-        width: 250px;
-        height: 240px;
-    }
-
-        .pop-date .date-con li {
-            width: 210px;
-            overflow: visible;
-            white-space: normal;
-        }
-
-.index-city-top, .index-city-con, .city-lately, .city-date {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}

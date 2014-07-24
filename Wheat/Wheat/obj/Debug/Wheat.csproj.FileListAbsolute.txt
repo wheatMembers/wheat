@@ -61,4 +61,3 @@ G:\Project\程序设计实践\Wheat\Wheat\bin\zh-Hans\WebMatrix.WebData.resource
 G:\Project\程序设计实践\Wheat\Wheat\obj\Debug\Wheat.csprojResolveAssemblyReference.cache
 G:\Project\程序设计实践\Wheat\Wheat\obj\Debug\Wheat.dll
 G:\Project\程序设计实践\Wheat\Wheat\obj\Debug\Wheat.pdb
-C:\Users\YY\Documents\wheat\Wheat\Wheat\obj\Debug\Wheat.csprojResolveAssemblyReference.cache
